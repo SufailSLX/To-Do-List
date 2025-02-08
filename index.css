@@ -1,0 +1,247 @@
+/* body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  background: linear-gradient(90deg, #390bba 0%, #1a4568 50%, #390bba 100%);
+    
+}
+
+.container{
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius:0 ;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus{
+    border-color: #3498db;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 10px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button{
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover{
+    background-color: #9d0808;
+}
+
+.edit-button{
+    background-color: #d0ff00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover{
+    background-color: #a0cc00;
+} */
+
+/* ------------------------------------------- */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #390bba 0%, #1a4568 50%, #390bba 100%);
+}
+
+.container{
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus{
+    border-color: #3498db;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button{
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover{
+    background-color: #9d0808;
+}
+
+.edit-button{
+    background-color: #d0ff00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover{
+    background-color: #a0cc00;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden; /* Hidden by default */
+    z-index: 999;
+    font-weight: bold;
+    font-size: 18px;
+    transition: visibility 0.3s ease-in-out;
+}
+
+/* Task Added Notification */
+.taskAdded {
+    background-color: #4CAF50;  /* Green */
+}
+
+/* Task Deleted Notification */
+.taskDeleted {
+    background-color: #F44336;  /* Red */
+}
+
+/* Task Edited Notification */
+.taskUpdated {
+    background-color: #FF9800;  /* Yellow */
+}
